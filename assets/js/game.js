@@ -146,6 +146,7 @@ $(document).ready(function () {
     });
 
     $(document).on("click", ".nextQuestion", function() {
+        clearInterval(game.timerID);
         goToNextQuestion();
     });
 
